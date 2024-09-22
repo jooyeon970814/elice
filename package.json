@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
+    "component": "cypress open --component",
+    "component:headless": "cypress run --component",
+    "cypress": "cypress open"
+  },
+  "dependencies": {
+    "next": "15.0.0-rc.0",
+    "react": "^19.0.0-rc-e4953922-20240919",
+    "react-dom": "^19.0.0-rc-e4953922-20240919"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.6",
+    "@types/react": "18.2.8",
+    "@types/react-dom": "18.0.6",
+    "cypress": "^13.14.2",
+    "start-server-and-test": "^2.0.8",
+    "typescript": "4.7.4"
+  }
+}
